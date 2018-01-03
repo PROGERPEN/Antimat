@@ -92,12 +92,13 @@ public class Chronometer implements Runnable {
             //convert the resulted time difference into hours, minutes, seconds and milliseconds
             int seconds = (int) (since / 1000) % 60;
             int minutes = (int) ((since / (MILLIS_TO_MINUTES)) % 60);
-            //int hours = (int) ((since / (MILLS_TO_HOURS)) % 24); //this resets to  0 after 24 hour!
-            int hours = (int) ((since / (MILLS_TO_HOURS))); //this does not reset to 0!
-            int millis = (int) since % 1000; //the last 3 digits of millisecs
+            int hours = (int) ((since / (MILLS_TO_HOURS)) % 24); //this resets to  0 after 24 hour!
+            //int hours = (int) ((since / (MILLS_TO_HOURS))); //this does not reset to 0!
+            int days = (int) ((since/(MILLS_TO_HOURS*24)));
+            //int millis = (int) since % 1000; //the last 3 digits of millisecs
 
-            ((MainActivity) mContext).updateTimerText(String.format("%02d:%02d:%02d:%03d"
-                    , hours, minutes, seconds, millis));
+            ((MainActivity) mContext).updateTimerText(String.format("%02d:%02d:%02d:%02d",
+                    days, hours, minutes, seconds));
 
             //Sleep the thread for a short amount, to prevent high CPU usage!
             try {

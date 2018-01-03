@@ -7,22 +7,22 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.progerpen.paragraph.MainActivity">
+    tools:context="paragraph.antimat.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000"
+        android:layout_height="match_parent"
+        android:background="#0084ff"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_weight="2">
 
         <Button
             android:id="@+id/btn_start"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:text="START"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="СТАТЬ КУЛЬТУРНЫМ"
             android:textSize="18dp"
             android:typeface="monospace"/>
 
@@ -31,8 +31,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="6"
-        android:background="#000000"
+        android:layout_weight="3"
+        android:background="@color/colorWhite"
         android:orientation="vertical">
 
         <TextView
@@ -42,10 +42,20 @@
             android:layout_gravity="center_horizontal"
             android:ellipsize="end"
             android:scrollbars="none"
-            android:text="00:00:00:000"
+            android:text="00:00:00:00"
             android:textAlignment="center"
-            android:textColor="#0dff00"
-            android:textSize="48dp"/>
+            android:textColor="@color/colorBlack"
+            android:textSize="48dp"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="CОРВАЛСЯ"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
 
 
     </LinearLayout>
@@ -53,17 +63,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="12"
-        android:background="#1f1d1d"
-        android:orientation="horizontal">
+        android:layout_weight="4"
+        android:background="#0084ff"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_stop"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:text="STOP"
-            android:textSize="18dp"/>
+
     </LinearLayout>
 </LinearLayout>
