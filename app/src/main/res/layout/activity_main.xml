@@ -23,8 +23,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="СТАТЬ КУЛЬТУРНЫМ"
-            android:textSize="18dp"
-            android:typeface="monospace"/>
+            android:textSize="20dp"
+            android:typeface="normal"
+            android:background="@drawable/outline_background"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 
@@ -36,26 +41,175 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_timer"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:ellipsize="end"
-            android:scrollbars="none"
-            android:text="00:00:00:00"
-            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="я не ругаюсь уже"
             android:textColor="@color/colorBlack"
-            android:textSize="48dp"
-            android:layout_marginTop="30dp"/>
+            android:textSize="20dp"
+            android:typeface="normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_timer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="48dp"
+                android:background="@drawable/window_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_timer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="48dp"
+                android:background="@drawable/window_background"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_timer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="48dp"
+                android:background="@drawable/window_background"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_timer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="48dp"
+                android:background="@drawable/window_background"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-40dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="дни"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:typeface="normal"/>
+
+            <TextView
+                android:id="@+id/hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="часы"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:typeface="normal"/>
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="минуты"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:typeface="normal"/>
+
+            <TextView
+                android:id="@+id/sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:scrollbars="none"
+                android:text="секунды"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:typeface="normal"/>
+
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/btn_stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="-40dp"
             android:text="CОРВАЛСЯ"
-            android:textSize="18dp"
-            android:layout_marginTop="20dp"/>
+            android:background="@drawable/outline_background_red"
+            android:textSize="20dp"
+            android:typeface="normal"
+            android:textColor="@android:color/holo_red_light"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"/>
 
 
     </LinearLayout>
@@ -65,7 +219,8 @@
         android:layout_height="match_parent"
         android:layout_weight="4"
         android:background="#0084ff"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
 
 
     </LinearLayout>

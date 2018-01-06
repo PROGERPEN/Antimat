@@ -40,7 +40,10 @@ public class MainActivity extends Activity {
 
     //Member variables to access UI Elements
     Button mBtnStart, mBtnLap, mBtnStop; //buttons
-    TextView mTvTimer; //timer textview
+    TextView mTvTimer1; //timer textview
+    TextView mTvTimer2; //timer textview
+    TextView mTvTimer3; //timer textview
+    TextView mTvTimer4; //timer textview
     EditText mEtLaps; //laps text view
     ScrollView mSvLaps; //scroll view which wraps the et_laps
 
@@ -69,7 +72,10 @@ public class MainActivity extends Activity {
         // mBtnLap = (Button) findViewById(R.id.btn_lap);
         mBtnStop = (Button) findViewById(R.id.btn_stop);
 
-        mTvTimer = (TextView) findViewById(R.id.tv_timer);
+        mTvTimer1 = (TextView) findViewById(R.id.tv_timer1);
+        mTvTimer2 = (TextView) findViewById(R.id.tv_timer2);
+        mTvTimer3 = (TextView) findViewById(R.id.tv_timer3);
+        mTvTimer4 = (TextView) findViewById(R.id.tv_timer4);
        /* mEtLaps = (EditText) findViewById(R.id.et_laps);
         mEtLaps.setEnabled(false); //prevent the et_laps to be editable
 
@@ -145,13 +151,17 @@ public class MainActivity extends Activity {
 
     /**
      * Update the text of tv_timer
-     * @param timeAsText the text to update tv_timer with
+     * @param timeAsText1 the text to update tv_timer with
      */
-    public void updateTimerText(final String timeAsText) {
+    public void updateTimerText(final String timeAsText1, final String timeAsText2,
+                                final String timeAsText3, final String timeAsText4) {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                mTvTimer.setText(timeAsText);
+                mTvTimer1.setText(timeAsText1);
+                mTvTimer2.setText(timeAsText2);
+                mTvTimer3.setText(timeAsText3);
+                mTvTimer4.setText(timeAsText4);
             }
         });
     }
@@ -217,7 +227,7 @@ public class MainActivity extends Activity {
         //editor.putString(ET_LAPST_TEXT, mEtLaps.getText().toString());
 
         //Same story for timer text
-        editor.putString(TV_TIMER_TEXT, mTvTimer.getText().toString());
+        editor.putString(TV_TIMER_TEXT, mTvTimer1.getText().toString());
 
         editor.commit();
     }
@@ -263,7 +273,7 @@ public class MainActivity extends Activity {
 
         String oldTvTimerText = pref.getString(TV_TIMER_TEXT, "");
         if(!oldTvTimerText.isEmpty()){
-            mTvTimer.setText(oldTvTimerText);
+            mTvTimer1.setText(oldTvTimerText);
         }
     }
 }

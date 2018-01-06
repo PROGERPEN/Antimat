@@ -6,8 +6,8 @@ import android.os.IBinder;
 
 public class NotificationUpdateService extends Service {
 
-    public static final String ACTION_START = "com.embedonix.simplechronometer.START_NOTIFY_SERVICE";
-    public static final String ACTION_STOP = "com.embedonix.simplechronometer.STOP_NOTIFY_SERVICE";
+    public static final String ACTION_START = "com.paragraph.antimat.START_NOTIFY_SERVICE";
+    public static final String ACTION_STOP = "com.paragraph.antimat.STOP_NOTIFY_SERVICE";
 
     private ChronometerApplication mApplication;
     private long mStartTime;

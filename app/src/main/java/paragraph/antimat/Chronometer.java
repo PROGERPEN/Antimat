@@ -97,8 +97,9 @@ public class Chronometer implements Runnable {
             int days = (int) ((since/(MILLS_TO_HOURS*24)));
             //int millis = (int) since % 1000; //the last 3 digits of millisecs
 
-            ((MainActivity) mContext).updateTimerText(String.format("%02d:%02d:%02d:%02d",
-                    days, hours, minutes, seconds));
+            ((MainActivity) mContext).updateTimerText(String.format("%02d", days),
+                    String.format("%02d",hours), String.format("%02d",minutes),
+                    String.format("%02d",seconds));
 
             //Sleep the thread for a short amount, to prevent high CPU usage!
             try {
