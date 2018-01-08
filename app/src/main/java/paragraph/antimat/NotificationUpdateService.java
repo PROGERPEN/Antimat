@@ -1,4 +1,4 @@
-package paragraph.antimat;
+/*package paragraph.antimat;
 
 import android.app.Service;
 import android.content.Intent;
@@ -96,3 +96,4 @@ public class NotificationUpdateService extends Service {
         }
     }
 }
+*/

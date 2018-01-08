@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#0084ff"
+        android:background="#e2eaf2"
         android:gravity="center"
         android:orientation="vertical"
         android:layout_weight="2">
@@ -26,7 +26,7 @@
             android:textSize="20dp"
             android:typeface="normal"
             android:background="@drawable/outline_background"
-            android:textColor="@color/colorWhite"
+            android:textColor="#3b5998"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textStyle="bold"/>
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:background="@color/colorWhite"
+        android:background="#97abbf"
         android:orientation="vertical">
 
         <TextView
@@ -66,7 +66,7 @@
                 android:scrollbars="none"
                 android:text="00"
                 android:textAlignment="center"
-                android:textColor="@color/colorWhite"
+                android:textColor="#3b5998"
                 android:textSize="48dp"
                 android:background="@drawable/window_background"
                 android:layout_marginLeft="10dp"
@@ -83,7 +83,7 @@
                 android:scrollbars="none"
                 android:text="00"
                 android:textAlignment="center"
-                android:textColor="@color/colorWhite"
+                android:textColor="#3b5998"
                 android:textSize="48dp"
                 android:background="@drawable/window_background"
                 android:layout_marginLeft="5dp"
@@ -100,7 +100,7 @@
                 android:scrollbars="none"
                 android:text="00"
                 android:textAlignment="center"
-                android:textColor="@color/colorWhite"
+                android:textColor="#3b5998"
                 android:textSize="48dp"
                 android:background="@drawable/window_background"
                 android:layout_marginLeft="5dp"
@@ -117,7 +117,7 @@
                 android:scrollbars="none"
                 android:text="00"
                 android:textAlignment="center"
-                android:textColor="@color/colorWhite"
+                android:textColor="#3b5998"
                 android:textSize="48dp"
                 android:background="@drawable/window_background"
                 android:layout_marginLeft="5dp"
@@ -203,13 +203,14 @@
             android:layout_gravity="center"
             android:layout_marginTop="-40dp"
             android:text="CОРВАЛСЯ"
-            android:background="@drawable/outline_background_red"
+            android:background="@drawable/outline_background"
             android:textSize="20dp"
             android:typeface="normal"
-            android:textColor="@android:color/holo_red_light"
+            android:textColor="#3b5998"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
 
 
     </LinearLayout>
@@ -218,9 +219,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="4"
-        android:background="#0084ff"
-        android:orientation="vertical"
-        android:layout_marginTop="5dp">
+        android:background="#e2eaf2"
+        android:orientation="vertical">
 
 
     </LinearLayout>

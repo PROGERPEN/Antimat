@@ -68,7 +68,7 @@ public class ChronometerApplication extends Application {
         return builder;
     }
 
-    public void startBackgroundServices(long startTime) {
+    /*public void startBackgroundServices(long startTime) {
         Intent service = new Intent(this, NotificationUpdateService.class);
         service.setAction(NotificationUpdateService.ACTION_START);
         service.putExtra("START_TIME", startTime);
@@ -81,7 +81,7 @@ public class ChronometerApplication extends Application {
         startService(service);
 
         cancelNotification();
-    }
+    }*/
 
 
 }

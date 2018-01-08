@@ -172,7 +172,7 @@ public class MainActivity extends Activity {
         loadInstance();
 
         //stop background services and notifications
-     ((ChronometerApplication)getApplication()).stopBackgroundServices();
+     //((ChronometerApplication)getApplication()).stopBackgroundServices();
         ((ChronometerApplication)getApplication()).cancelNotification();
     }
 
@@ -183,8 +183,8 @@ public class MainActivity extends Activity {
 
         if(mChrono != null && mChrono.isRunning()) {
             //start background notification and timer
-            ((ChronometerApplication)getApplication())
-                    .startBackgroundServices(mChrono.getStartTime());
+           // ((ChronometerApplication)getApplication())
+             //       .startBackgroundServices(mChrono.getStartTime());
         }
     }
 
@@ -197,7 +197,7 @@ public class MainActivity extends Activity {
         //from showing the notification if the chronometer is running!
         if(mChrono == null || !mChrono.isRunning()) {
             //stop background services and notifications
-            ((ChronometerApplication) getApplication()).stopBackgroundServices();
+            //((ChronometerApplication) getApplication()).stopBackgroundServices();
             ((ChronometerApplication) getApplication()).cancelNotification();
         }
 
